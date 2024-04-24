@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danh sách tour du lịch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Danh sách tour du lịch</h1>
+  </header>
+
+  <main>
+    <ul id="tourList"></ul>
+
+    <div id="addTourContainer" style="display: none;">
+      <h2>Thêm tour mới</h2>
+      <form id="newTourForm">
+        <label for="tourName">Tên tour:</label>
+        <input type="text" id="tourName" required>
+        <label for="tourPrice">Giá:</label>
+        <input type="number" id="tourPrice" required>
+        <label for="tourLocation">Địa điểm:</label>
+        <input type="text" id="tourLocation" required>
+        <label for="tourStartDate">Ngày khởi hành:</label>
+        <input type="date" id="tourStartDate" required>
+        <label for="tourDuration">Số ngày:</label>
+        <input type="number" id="tourDuration" required>
+        <label for="tourDescription">Mô tả:</label>
+        <textarea id="tourDescription" required></textarea>
+        <button type="submit">Thêm tour</button>
+      </form>
+    </div>
+
+    <button id="addTourButton">Thêm tour mới</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Công ty Du lịch UED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
